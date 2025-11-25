@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍔 Cardápio Online - Sua Lancheria</title>
+    
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .categoria {
+            margin-top: 30px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 15px;
+        }
+        .categoria h2 {
+            color: #d9534f; /* Cor de destaque para categorias */
+            border-left: 5px solid #d9534f;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px dashed #eee;
+        }
+        .item:last-child {
+            border-bottom: none;
+        }
+        .item-info {
+            flex-grow: 1;
+        }
+        .item-info h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.2em;
+        }
+        .item-info p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .item-preco {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #4CAF50; /* Cor verde para preço */
+            margin-right: 20px;
+        }
+        .adicionar-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .adicionar-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Bem-vindo(a) à Lancheria!</h1>
+            <p>Seu pedido rápido e fresquinho na sua casa.</p>
+        </header>
+
+        <div class="categoria" id="lanches">
+            <h2>🍔 Lanches Especiais</h2>
+
+            <div class="item">
+                <div class="item-info">
+                    <h3>Super Clássico</h3>
+                    <p>Pão de brioche, 200g de carne, queijo cheddar, bacon crocante, alface e maionese da casa.</p>
+                </div>
+                <div class="item-preco">R$ 35,90</div>
+                <button class="adicionar-btn" data-item-id="1">Adicionar</button>
+            </div>
+
+            <div class="item">
+                <div class="item-info">
+                    <h3>Vegetariano Deluxe</h3>
+                    <p>Pão integral, hambúrguer de grão de bico, queijo coalho grelhado e rúcula.</p>
+                </div>
+                <div class="item-preco">R$ 29,90</div>
+                <button class="adicionar-btn" data-item-id="2">Adicionar</button>
+            </div>
+            
+        </div>
+
+        <div class="categoria" id="acompanhamentos">
+            <h2>🍟 Acompanhamentos</h2>
+
+            <div class="item">
+                <div class="item-info">
+                    <h3>Batata Frita Rústica</h3>
+                    <p>Porção de batata rústica com alecrim e alho.</p>
+                </div>
+                <div class="item-preco">R$ 18,00</div>
+                <button class="adicionar-btn" data-item-id="3">Adicionar</button>
+            </div>
+
+            <div class="item">
+                <div class="item-info">
+                    <h3>Anéis de Cebola</h3>
+                    <p>Porção média de anéis de cebola empanados e sequinhos.</p>
+                </div>
+                <div class="item-preco">R$ 22,50</div>
+                <button class="adicionar-btn" data-item-id="4">Adicionar</button>
+            </div>
+
+        </div>
+
+        <div class="categoria" id="bebidas">
+            <h2>🥤 Bebidas</h2>
+
+            <div class="item">
+                <div class="item-info">
+                    <h3>Refrigerante Lata</h3>
+                    <p>Coca-cola, Guaraná, Soda (350ml).</p>
+                </div>
+                <div class="item-preco">R$ 6,00</div>
+                <button class="adicionar-btn" data-item-id="5">Adicionar</button>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
